@@ -7,7 +7,7 @@ To install dump this folder into ~/Library/Application Support/Textual/Styles
 
 It looks like this: 
 
-.. image:: http://cl.ly/3Wwn/Screen_shot_2010-12-07_at_12.44.24_PM.png
+.. image:: http://dl.dropbox.com/u/247689/Skylight-Dark.png
 
 
 Important notes and warnings:
