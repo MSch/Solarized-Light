@@ -1,12 +1,13 @@
-Skylight is a Textual irc style. http://www.codeux.com/textual/
+Skylight-Dark is a dark variant of the Skylight style for the Textual IRC client.
 
-It makes me happy.
+* Skylight: https://github.com/mintchaos/Skylight
+* Textual IRC: http://www.codeux.com/textual/
 
 To install dump this folder into ~/Library/Application Support/Textual/Styles
 
 It looks like this: 
 
-.. image:: http://img.skitch.com/20101029-n44seaf65ph3nd861dbear9e5y.png
+.. image:: http://cl.ly/3X9h/Screen_shot_2010-12-07_at_12.34.06_PM.png
 
 
 Important notes and warnings:
@@ -46,3 +47,5 @@ Props
 This style contains some code from the Simplified style that ships with Textual & contains some ideas from the Simplified theme for Linkinus by "Cowboy" Ben Alman (http://benalman.com/). 
 
 Scripts.js contains a copy of jQuery by John Resig
+
+Original Skylight by Christian Metts.
