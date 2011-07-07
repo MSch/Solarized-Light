@@ -1,13 +1,14 @@
-Skylight-Dark is a dark variant of the Skylight style for the Textual IRC client.
+Solarized-Light is a variant of the Skylight and Skylight-Dark style for the Textual IRC client.
 
 * Skylight: https://github.com/mintchaos/Skylight
+* Skylight-Dark: https://github.com/idangazit/Skylight-Dark
 * Textual IRC: http://www.codeux.com/textual/
 
 To install dump this folder into ~/Library/Application Support/Textual/Styles
 
 It looks like this: 
 
-.. image:: http://dl.dropbox.com/u/247689/Skylight-Dark.png
+.. image:: https://skitch.com/asenchi/fewja/freenode-internet-relay-chat-network-freebsd-324-users
 
 
 Important notes and warnings:
