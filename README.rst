@@ -8,7 +8,7 @@ To install dump this folder into ~/Library/Application Support/Textual/Styles
 
 It looks like this: 
 
-.. image:: https://skitch.com/asenchi/fewja/freenode-internet-relay-chat-network-freebsd-324-users
+.. image:: http://dl.dropbox.com/u/407293/Screen%20shot%202011-07-07%20at%2011.07.10%20AM.png
 
 
 Important notes and warnings:
