@@ -1,28 +1,49 @@
+/* 
+SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
+--------- ------- ---- -------  ----------- ---------- ----------- -----------
+base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
+base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+base01    #586e75 10/7 brgreen  240 #585858 45 -07 -07  88 110 117 194  25  46
+base00    #657b83 11/7 bryellow 241 #626262 50 -07 -07 101 123 131 195  23  51
+base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
+base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
+base2     #eee8d5  7/7 white    254 #e4e4e4 92 -00  10 238 232 213  44  11  93
+base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
+yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
+orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+*/
+
 /* Basic Body Structure */
 
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-  	word-wrap: break-word;
-}	
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+    word-wrap: break-word;
+} 
 
 body {
-	color: #fff;
-	height: 100%;
- 	z-index: 100;
-	font-size: 12px;
-	overflow: hidden;
-	overflow-y: visible;
-	background-color: #000;
-	font-family: "Lucida Grande";
+  color: #002b36;
+  height: 100%;
+  z-index: 100;
+  font-size: 12px;
+  overflow: hidden;
+  overflow-y: visible;
+  background-color: #fdf6e3;
+  font-family: "Lucida Grande";
 }
 
 body div#body_home {
   left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 100;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
   max-height: 97.5%;
   position: absolute;
 }
@@ -35,23 +56,23 @@ body div#body_home div {
 }
 
 body div#body_home p {
-	clear: both;
-	position: relative;
-	margin-left:0 !important;
-	text-indent:0 !important;
+  clear: both;
+  position: relative;
+  margin-left:0 !important;
+  text-indent:0 !important;
 }
 
 /* Time */
 
 body .date  { font-size: 11px ;
    text-align: center; 
-   color: #777; 
+   color: #93a1a1; 
    width: 7em;
    margin: 1em 0 1em 50%;
    position: relative;
    left: -3.5em;
    padding: 3px 3px 4px 3px; 
-   background: #333;
+   background: #eee8d5;
 /*   border-top: 1px dotted #ddd; */
 /*   border-bottom: 1px dotted #ddd;*/
    border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;
@@ -61,11 +82,11 @@ body .time {
   float: right;
   width: 5em !important;
   margin-right: -7em;
-	color: #aaa;
-	text-indent: 0;
-	word-wrap: normal;
-	white-space: nowrap
-	display: inline-block;
+  color: #93a1a1;
+  text-indent: 0;
+  word-wrap: normal;
+  white-space: nowrap
+  display: inline-block;
 }
 
 /* Links */
@@ -88,13 +109,13 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  color: #333;
+  color: #93a1a1;
   z-index: 400;
 /*  opacity: 0.95;*/
   font-size: 10px;
   text-align: center;
   position: fixed;
-  background: #efefef -webkit-gradient(
+  background: #eee8d5 -webkit-gradient(
       linear,
       left bottom,
       left top,
@@ -109,13 +130,13 @@ a:hover {
 }
 
 #topic_bar a {
-  color: #00e;
-  border-color: #00e;
+  color: #6c71c4;
+  border-color: #586e75;
 }
 
 #topic_bar a:hover {
-  color: #0080FF;
-  border-color: #0080FF;
+  color: #268bd2;
+  border-color: #586e75;
 }
 
 /* Images */
@@ -152,7 +173,8 @@ div[id=mark] {
 
 body div[type=privmsg] .sender[type=myself],
 body div[type=action] .sender[type=myself] { 
-  color: #fff; 
+  color: #d33682; 
+  background-color: #eee8d5;
 }
 
 body div#body_home p { margin-left: 10em !important; margin-right: 7em; }
@@ -166,14 +188,17 @@ body .sender[type=normal], body .sender[type=myself] {
   visibility: hidden;
 }
 
-body .sender[type=normal][colornumber='0'] { color: #E0CE71; }
-body .sender[type=normal][colornumber='1'] { color: #BAFC74; }
-body .sender[type=normal][colornumber='2'] { color: #CFCFFC; }
-body .sender[type=normal][colornumber='3'] { color: #F87F73; }
-body .sender[type=normal][colornumber='4'] { color: #FDFDC3; }
-body .sender[type=normal][colornumber='5'] { color: #7998B4; }
-body .sender[type=normal][colornumber='6'] { color: #FDCFA5; }
-body .sender[type=normal][colornumber='7'] { color: #9F7C36; }
+body .sender[type=normal][colornumber='0'] { color: #b58900; } /* yellow */
+body .sender[type=normal][colornumber='1'] { color: #cb4b16; } /* orange */
+body .sender[type=normal][colornumber='2'] { color: #dc322f; } /* red */
+body .sender[type=normal][colornumber='4'] { color: #6c71c4; } /* violet */
+body .sender[type=normal][colornumber='5'] { color: #268bd2; } /* blue */
+body .sender[type=normal][colornumber='6'] { color: #2aa198; } /* cyan */
+body .sender[type=normal][colornumber='7'] { color: #859900; } /* green */
+/* We use this for our own nick, commenting for now.
+body .sender[type=normal][colornumber='3'] { color: #d33682; }
+*/
+
 body .sender[type=normal][colornumber='8'] { color: #7CA67C; }
 body .sender[type=normal][colornumber='9'] { color: #77A1CA; }
 body .sender[type=normal][colornumber='10'] { color: #D56B00; }
@@ -188,28 +213,28 @@ body .sender[type=normal][colornumber='15'] { color: #F989FD; }
 body div[type=notice],
 body div[type=ctcp],
 body div[type=wallops] {
-	color: #f00;
-  	z-index: 191;
-  	position: relative;
+  color: #f00;
+    z-index: 191;
+    position: relative;
 }
 body div[type=notice] .message,
 body div[type=ctcp] .message,
 body div[type=wallops] .message {
   border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;
   padding: 2px 5px 2px 5px;
-	background: #FDE3E3;
+  background: #FDE3E3;
 /*  border: 1px solid #FA9B9D;*/
 }
 
 body div[type=notice] .sender {
-	color: #f00;
-	font-weight: 700;
+  color: #f00;
+  font-weight: 700;
 }
 
 /* PRIVMSG */
 
 body div[type=privmsg][highlight=false]  {
- 	padding: 4px 5px 2px 5px;
+  padding: 4px 5px 2px 5px;
 }
 body div.repeating_author[type=privmsg][highlight=false]  {
  padding-top: 0;
@@ -218,14 +243,14 @@ body div.repeating_author[type=privmsg][highlight=false]  {
 
 body div[type=privmsg][highlight=true],
 body div[type=action][highlight=true] {
-	font-weight: normal;
- 	padding: 2px 5px 1px 5px;
-	background-color: rgba(220, 210, 255, 0.3) !important;
+  font-weight: normal;
+  padding: 2px 5px 1px 5px;
+  background-color: rgba(220, 210, 255, 0.3) !important;
 }
 
 body div[type=privmsg][highlight=true] .message,
 body div[type=action][highlight=true] .message {
-	color: white;  
+  color: #002b36;  
 }
 
 [highlight=false] + [highlight=true]  {
@@ -247,39 +272,41 @@ body div div[type=action][highlight=true].temphightlight {
 
 
 body div[type=privmsg] .message {
-	color: #ccc;
+  color: #657b83;
 }
 
 body div[type=privmsg] .sender {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 /* ACTION */
 
 body div[type=action]  {
- 	padding: 3px 5px 3px 5px;
+  padding: 3px 5px 3px 5px;
 }
 
 body div[type=action] .message {
-/*  color: #666;*/
+  color: #93a1a1;
+  font-style: italic;
 }
 
 body div[type=action] .sender {
-	font-weight: 700;
+  font-weight: 700;
+  color: #586e75;
 }
 
 body div div[type="privmsg"] p[type=myself] .message, 
 body div[type=action] p[type=myself] .message {
-	color: #fff;
+  color: #657b83;
 }
 
 body div[type=action] .sender:before {
-	content: "»";
-	margin-right: 0.4em;
+  content: "»";
+  margin-right: 0.4em;
 }
 
 body div[type=action] .sender:after {
-	content: "";
+  content: "";
 }
 
 /* REPLY/SYSTEM/ERROR/DCC/DEBUG/INVITE */
@@ -293,13 +320,13 @@ body div[type=dcc_send_send],
 body div[type=dcc_send_receive],
 body div[type=debug_send],
 body div[type=debug_receive] {
-	color: #777;
-  	z-index: 190;
-	background: #eee;
-  	position: relative;
- 	padding: 2px 5px 2px 5px;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+  color: #dc322f;
+    z-index: 190;
+  background: #eee;
+    position: relative;
+  padding: 2px 5px 2px 5px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 /* GENERAL EVENT */
@@ -312,28 +339,29 @@ body div[type=kill],
 body div[type=nick],
 body div[type=mode],
 body div[type=topic] {
-  padding: 2px 5px 2px 5px;
-    color: #aaa;
+  padding: 2px 5px 2px 40px;
+    color: #93a1a1;
+    font-size: 80%;
 }
 
 body div[type=join] .message:before {
-	content: "→";
-  	color: #0c0;
-  	margin-right: 3px;
+  content: "→";
+    color: #586e75;
+    margin-right: 3px;
 }
 
 body div[type=kick] .message:before,
 body div[type=part] .message:before,
 body div[type=quit] .message:before {
-	content: "←";
-  	color: #e00;
-  	margin-right: 3px;
+  content: "←";
+    color: #cb4b16;
+    margin-right: 3px;
 }
 
 body div[type=nick] .message:before {
-	content:"•";
-  	color: #0c0;
-  	margin-right: 3px;
+  content:"•";
+    color: #586e75;
+    margin-right: 3px;
 }
 
 /* mIRC Color Codes */
