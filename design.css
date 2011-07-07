@@ -174,7 +174,6 @@ div[id=mark] {
 body div[type=privmsg] .sender[type=myself],
 body div[type=action] .sender[type=myself] { 
   color: #d33682; 
-  background-color: #eee8d5;
 }
 
 body div#body_home p { margin-left: 10em !important; margin-right: 7em; }
@@ -245,7 +244,7 @@ body div[type=privmsg][highlight=true],
 body div[type=action][highlight=true] {
   font-weight: normal;
   padding: 2px 5px 1px 5px;
-  background-color: rgba(238, 232, 213, 0.3) !important;
+  background-color: rgba(238, 232, 213, 1.0) !important;
 }
 
 body div[type=privmsg][highlight=true] .message,
