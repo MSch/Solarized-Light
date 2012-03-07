@@ -170,7 +170,7 @@ b],f.body["scroll"+b],f.documentElement["scroll"+b],f.body["offset"+b],f.documen
 // *********************************
 
 function same_author(row) {
-  if (row.attr('type') == "privmsg" && row.attr('nick') == row.prev("[type='privmsg']").attr('nick')) {
+  if (row.attr('type') == "privmsg" && $('.sender', row).attr('nick') == $('.sender', row.prev("[type='privmsg']")).attr('nick')) {
     row.addClass('repeating_author');
   }
 }
@@ -178,10 +178,10 @@ function same_author(row) {
 function split_time(row) {
   var time = row.find('.time');
   time.hide();
-  // turns "[10/27/2010 -:- 10:45:02 PM]" into ["10/27/2010", "-:-", "10:45:02", "PM"]
+  // turns "[10/27/2010 -:- 15:45:02]" into ["10/27/2010", "-:-", "15:45:02"]
   bits = time.text().replace(/[\[\]]/g, '').split(' ');
   row.data('date', bits[0]);
-  row.data('time', bits[2].slice(0,5).replace(/^0/, '') + bits[3].toLowerCase());
+  row.data('time', bits[2].slice(0,5).replace(/^0/, ''));
 }
 
 function addTimeElems(row) {
@@ -190,7 +190,7 @@ function addTimeElems(row) {
     prev = row.prev().prev(".line");
   } else {
     prev = row.prev(".line");
-  } 
+  }
   console.log(row.attr('id') +  ' -- ' + prev.attr('id'));
   console.log(row.data() == prev.data)
   if (row.data('date') != prev.data('date')) {
